@@ -1,7 +1,7 @@
 import { Link, Outlet } from "react-router-dom";
 import ThemeSwitcher from "../component/theme/themeSwitcher";
 import { useTheme } from "../component/theme/themeContext";
-export default function Root() {
+export default function RootLayout() {
   const { theme } = useTheme();
   return (
     <>

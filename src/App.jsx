@@ -3,7 +3,7 @@ import "./App.css";
 import Cart from "./pages/cart/cart";
 import ErrorPage from "./pages/error/error-page";
 import Product from "./pages/product/product";
-import Root from "./pages/Root";
+import RootLayout from "./pages/RootLayout";
 import { ThemeProvider } from "./component/theme/themeContext";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
@@ -12,7 +12,7 @@ const queryClient = new QueryClient();
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Root />,
+    element: <RootLayout />,
     errorElement: <ErrorPage />,
     children: [
       {
