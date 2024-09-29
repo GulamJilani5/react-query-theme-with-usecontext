@@ -1,0 +1,41 @@
+:root {
+  /* light theme */
+  --light-bg-color: white;
+  --light-color: black;
+
+  /* dark theme */
+  --dark-bg-color: black;
+  --dark-color: white;
+}
+
+.light {
+  background-color: var(--light-bg-color)
+  color: var(--light-color);
+}
+
+.dark {
+  background-color: var(--dark-bg-color);
+  color: var(--dark-color);
+}
+
+
+/*****************************************************
+*** Styling the Root's nav link
+******************************************************/
+/* Light theme */
+body.light a {
+    color: black; /* Set the link color for light theme */
+  }
+  body.light a:visited {
+    color: grey; /* Optional: Change color for visited links */
+  }
+  
+  /* Dark theme */
+  body.dark a {
+    color: white; /* Set the link color for dark theme */
+  }
+  body.dark a:visited {
+    color: lightgrey; /* Optional: Change color for visited links */
+  }
+
+
